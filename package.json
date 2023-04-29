@@ -4,11 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.ts",
+    "prisma-gen": "npx prisma generate",
+    "prisma-mig": "npx prisma migrate dev --preview-feature"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
   "devDependencies": {
     "@types/node": "^18.16.1",
     "prisma": "^4.13.0",
@@ -16,6 +22,9 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "@prisma/client": "^4.13.0"
+    "@prisma/client": "^4.13.0",
+    "apollo-server": "^3.12.0",
+    "graphql": "^15.8.0",
+    "nodemon": "^2.0.22"
   }
 }
