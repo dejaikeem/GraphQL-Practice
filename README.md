@@ -1,4 +1,4 @@
-# bold9 pre-assignment
+## GraphQL-Practice
 Prisma, TypeScript, apollo-server, mysql를 사용하여 요구사항을 만족하는 GraphQL Server를 구현
 ## 레포지토리 복제
 ```git clone https://github.com/dejaikeem/bold9Hw.git```
